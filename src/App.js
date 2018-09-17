@@ -6,19 +6,19 @@ import animals from "./animals.json";
 import "./App.css";
 
 class App extends Component {
-  // Setting this.state.friends to the friends json array
+ 
   state = {
     animals
   };
 
   moveAnimal = id => {
-    // Filter this.state.friends for friends with an id not equal to the id being removed
+  
     const animals = this.state.animals.filter(animal => animal.id !== id);
-    // Set this.state.friends equal to the new friends array
+ 
     this.setState({ animals });
   };
 
-  // Map over this.state.friends and render a FriendCard component for each friend object
+ 
   render() {
     return (
       <Wrapper>
